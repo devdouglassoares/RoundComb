@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFE1AA1E-619E-482E-BA2F-8615CDA0B984}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.DynamicProperties</RootNamespace>
+    <AssemblyName>Core.DynamicProperties</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundcombDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RoundcombDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombRelease|AnyCPU'">
+    <OutputPath>bin\RoundCombRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\modules\productManagement\server\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\modules\productManagement\server\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\DynamicPropertiesController.cs" />
+    <Compile Include="Db\DynamicPropertyContext.cs" />
+    <Compile Include="Dtos\DateTimeRangeFilterModel.cs" />
+    <Compile Include="Dtos\DynamicPropertyFilterModel.cs" />
+    <Compile Include="Dtos\DynamicPropertyValueDto.cs" />
+    <Compile Include="Dtos\RangeFilterModel.cs" />
+    <Compile Include="EntityConfigMapping\DynamicPropertyEntityTypeMappingEntityTypeConfig.cs" />
+    <Compile Include="EntityConfigMapping\DynamicPropertyMapping.cs" />
+    <Compile Include="EntityConfigMapping\DynamicPropertySupportedEntityTypesEntityTypeConfig.cs" />
+    <Compile Include="EntityConfigMapping\DynamicPropertyValueEntityTypeConfiguration.cs" />
+    <Compile Include="Exceptions\DynamicPropertyAlreadyExistException.cs" />
+    <Compile Include="IDependency.cs" />
+    <Compile Include="Migrations\201606040637515_AddDynamicPropertySupportedEntityType.cs" />
+    <Compile Include="Migrations\201606040637515_AddDynamicPropertySupportedEntityType.Designer.cs">
+      <DependentUpon>201606040637515_AddDynamicPropertySupportedEntityType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607111518489_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs" />
+    <Compile Include="Migrations\201607111518489_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.Designer.cs">
+      <DependentUpon>201607111518489_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608011700485_Add_PrimaryKey_To_DynamicPropertyValue.cs" />
+    <Compile Include="Migrations\201608011700485_Add_PrimaryKey_To_DynamicPropertyValue.Designer.cs">
+      <DependentUpon>201608011700485_Add_PrimaryKey_To_DynamicPropertyValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701090904304_Add_Required_Property_To_DynamicProperty.cs" />
+    <Compile Include="Migrations\201701090904304_Add_Required_Property_To_DynamicProperty.Designer.cs">
+      <DependentUpon>201701090904304_Add_Required_Property_To_DynamicProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701140541323_Add_BaseEntity_To_DynamicProperty.cs" />
+    <Compile Include="Migrations\201701140541323_Add_BaseEntity_To_DynamicProperty.Designer.cs">
+      <DependentUpon>201701140541323_Add_BaseEntity_To_DynamicProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DynamicPropertyEntityTypeMapping.cs" />
+    <Compile Include="Models\DynamicPropertySupportedEntityType.cs" />
+    <Compile Include="Models\UploadedFilePaths.cs" />
+    <Compile Include="Models\IHasDynamicProperty.cs" />
+    <Compile Include="MappingConfig\DynamicPropMappingConfig.cs" />
+    <Compile Include="Migrations\201602150733273_Initial_DynamicProperty_Tables.cs" />
+    <Compile Include="Migrations\201602150733273_Initial_DynamicProperty_Tables.Designer.cs">
+      <DependentUpon>201602150733273_Initial_DynamicProperty_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605041045209_Add_RangeFilter_Support.cs" />
+    <Compile Include="Migrations\201605041045209_Add_RangeFilter_Support.Designer.cs">
+      <DependentUpon>201605041045209_Add_RangeFilter_Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605261144599_Migrate_DynamicProperty_Support_More_Concrete_Type.cs" />
+    <Compile Include="Migrations\201605261144599_Migrate_DynamicProperty_Support_More_Concrete_Type.Designer.cs">
+      <DependentUpon>201605261144599_Migrate_DynamicProperty_Support_More_Concrete_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605261235154_Add_Checkbox_Values_Support_To_DynamicPropertyValue.cs" />
+    <Compile Include="Migrations\201605261235154_Add_Checkbox_Values_Support_To_DynamicPropertyValue.Designer.cs">
+      <DependentUpon>201605261235154_Add_Checkbox_Values_Support_To_DynamicPropertyValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606040309132_Support_Multiple_TargetEntityTypes.cs" />
+    <Compile Include="Migrations\201606040309132_Support_Multiple_TargetEntityTypes.Designer.cs">
+      <DependentUpon>201606040309132_Support_Multiple_TargetEntityTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DynamicProperty.cs" />
+    <Compile Include="Dtos\DynamicPropertyModel.cs" />
+    <Compile Include="Models\DynamicPropertyValue.cs" />
+    <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Dtos\DynamicPropertyValuesModel.cs" />
+    <Compile Include="Services\RegisterDynamicPropertySupportedEntities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IDynamicPropertyRepository.cs" />
+    <Compile Include="Implementations\DynamicPropertyService.cs" />
+    <Compile Include="Services\IDynamicPropertyService.cs" />
+    <Compile Include="Services\IDynamicPropertyValueService.cs" />
+    <Compile Include="Implementations\DynamicPropertyValueService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{551ef766-3d22-4dd9-b13b-358a4d85edb9}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201602150733273_Initial_DynamicProperty_Tables.resx">
+      <DependentUpon>201602150733273_Initial_DynamicProperty_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605041045209_Add_RangeFilter_Support.resx">
+      <DependentUpon>201605041045209_Add_RangeFilter_Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605261144599_Migrate_DynamicProperty_Support_More_Concrete_Type.resx">
+      <DependentUpon>201605261144599_Migrate_DynamicProperty_Support_More_Concrete_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605261235154_Add_Checkbox_Values_Support_To_DynamicPropertyValue.resx">
+      <DependentUpon>201605261235154_Add_Checkbox_Values_Support_To_DynamicPropertyValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606040309132_Support_Multiple_TargetEntityTypes.resx">
+      <DependentUpon>201606040309132_Support_Multiple_TargetEntityTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606040637515_AddDynamicPropertySupportedEntityType.resx">
+      <DependentUpon>201606040637515_AddDynamicPropertySupportedEntityType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607111518489_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.resx">
+      <DependentUpon>201607111518489_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608011700485_Add_PrimaryKey_To_DynamicPropertyValue.resx">
+      <DependentUpon>201608011700485_Add_PrimaryKey_To_DynamicPropertyValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701090904304_Add_Required_Property_To_DynamicProperty.resx">
+      <DependentUpon>201701090904304_Add_Required_Property_To_DynamicProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701140541323_Add_BaseEntity_To_DynamicProperty.resx">
+      <DependentUpon>201701140541323_Add_BaseEntity_To_DynamicProperty.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

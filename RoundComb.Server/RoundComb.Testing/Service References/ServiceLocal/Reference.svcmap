@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4d96d2e6-5d7b-44dd-83a7-18de2acf4692" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/RoundComb.ServiceLayer.SoapApi/V1/SoapApi.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a3d652a3-6a53-45e3-94ae-c5857204bb71" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RoundComb.ServiceLayer.SoapApi/V1/SoapApi.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="eeaca531-a5ad-4aa8-ac1c-12374b50a7e9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RoundComb.ServiceLayer.SoapApi/V1/SoapApi.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9e813f5d-fa4a-477e-bdd9-4c1f37fd2b7b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RoundComb.ServiceLayer.SoapApi/V1/SoapApi.svc/mex" />
+    <MetadataFile FileName="CitiusNext.External.Interoperability.DataContracts.xsd" MetadataType="Schema" ID="a90ca706-9579-4cf8-8392-9e1a4d0f378a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RoundComb.ServiceLayer.SoapApi/V1/SoapApi.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

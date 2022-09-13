@@ -1,0 +1,1 @@
+﻿Ver os ficheiros README nos diferentes projetos desta solução

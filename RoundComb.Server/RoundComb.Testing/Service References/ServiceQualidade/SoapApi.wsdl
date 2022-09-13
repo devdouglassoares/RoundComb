@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SoapApi" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISoapApi_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10 />
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy />
+        </sp:Wss11>
+        <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportIssuedTokens />
+            <sp:RequireClientEntropy />
+            <sp:RequireServerEntropy />
+          </wsp:Policy>
+        </sp:Trust10>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://citiusnext.qualidade.local/CitiusNext/Externals/ServiceLayer/RoundComb.ServiceLayer.SoapApi.SoapApi.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://citiusnext.qualidade.local/CitiusNext/Externals/ServiceLayer/RoundComb.ServiceLayer.SoapApi.SoapApi.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://citiusnext.qualidade.local/CitiusNext/Externals/ServiceLayer/RoundComb.ServiceLayer.SoapApi.SoapApi.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISoapApi_getDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumento" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMessageValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageValidation" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMessageValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_setMessageSubmit_InputMessage">
+    <wsdl:part name="parameters" element="tns:setMessageSubmit" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_setMessageSubmit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setMessageSubmitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_isAlive_InputMessage">
+    <wsdl:part name="parameters" element="tns:isAlive" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_isAlive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMessageCompleteXsd_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageCompleteXsd" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMessageCompleteXsd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMessageCompleteXsdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMsgBodyXsd_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMsgBodyXsd" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMsgBodyXsd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMsgBodyXsdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMsgBodySimplifiedXsd_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMsgBodySimplifiedXsd" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getMsgBodySimplifiedXsd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMsgBodySimplifiedXsdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getTribunaisList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTribunaisList" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getTribunaisList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTribunaisListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getUnidadesOrganicasListByIdTribunal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUnidadesOrganicasListByIdTribunal" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getUnidadesOrganicasListByIdTribunal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUnidadesOrganicasListByIdTribunalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getEstadoDistribuicaoProcesso_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoDistribuicaoProcesso" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getEstadoDistribuicaoProcesso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoDistribuicaoProcessoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getEstadoComunicacaoProcesso_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoComunicacaoProcesso" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getEstadoComunicacaoProcesso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoComunicacaoProcessoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getLocalizarProcesso_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalizarProcesso" />
+  </wsdl:message>
+  <wsdl:message name="ISoapApi_getLocalizarProcesso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalizarProcessoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISoapApi">
+    <wsdl:operation name="getDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getDocumento" message="tns:ISoapApi_getDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getDocumentoResponse" message="tns:ISoapApi_getDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMessageValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getMessageValidation" message="tns:ISoapApi_getMessageValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getMessageValidationResponse" message="tns:ISoapApi_getMessageValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setMessageSubmit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/setMessageSubmit" message="tns:ISoapApi_setMessageSubmit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/setMessageSubmitResponse" message="tns:ISoapApi_setMessageSubmit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isAlive">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/isAlive" message="tns:ISoapApi_isAlive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/isAliveResponse" message="tns:ISoapApi_isAlive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMessageCompleteXsd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getMessageCompleteXsd" message="tns:ISoapApi_getMessageCompleteXsd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getMessageCompleteXsdResponse" message="tns:ISoapApi_getMessageCompleteXsd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMsgBodyXsd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getMsgBodyXsd" message="tns:ISoapApi_getMsgBodyXsd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getMsgBodyXsdResponse" message="tns:ISoapApi_getMsgBodyXsd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMsgBodySimplifiedXsd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getMsgBodySimplifiedXsd" message="tns:ISoapApi_getMsgBodySimplifiedXsd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getMsgBodySimplifiedXsdResponse" message="tns:ISoapApi_getMsgBodySimplifiedXsd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTribunaisList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getTribunaisList" message="tns:ISoapApi_getTribunaisList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getTribunaisListResponse" message="tns:ISoapApi_getTribunaisList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesOrganicasListByIdTribunal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getUnidadesOrganicasListByIdTribunal" message="tns:ISoapApi_getUnidadesOrganicasListByIdTribunal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getUnidadesOrganicasListByIdTribunalResponse" message="tns:ISoapApi_getUnidadesOrganicasListByIdTribunal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoDistribuicaoProcesso">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getEstadoDistribuicaoProcesso" message="tns:ISoapApi_getEstadoDistribuicaoProcesso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getEstadoDistribuicaoProcessoResponse" message="tns:ISoapApi_getEstadoDistribuicaoProcesso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoComunicacaoProcesso">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getEstadoComunicacaoProcesso" message="tns:ISoapApi_getEstadoComunicacaoProcesso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getEstadoComunicacaoProcessoResponse" message="tns:ISoapApi_getEstadoComunicacaoProcesso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalizarProcesso">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapApi/getLocalizarProcesso" message="tns:ISoapApi_getLocalizarProcesso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapApi/getLocalizarProcessoResponse" message="tns:ISoapApi_getLocalizarProcesso_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ISoapApi" type="tns:ISoapApi">
+    <wsp:PolicyReference URI="#WSHttpBinding_ISoapApi_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getDocumento">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getDocumento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMessageValidation">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getMessageValidation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMessageSubmit">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/setMessageSubmit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isAlive">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/isAlive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMessageCompleteXsd">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getMessageCompleteXsd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMsgBodyXsd">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getMsgBodyXsd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMsgBodySimplifiedXsd">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getMsgBodySimplifiedXsd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTribunaisList">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getTribunaisList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUnidadesOrganicasListByIdTribunal">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getUnidadesOrganicasListByIdTribunal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoDistribuicaoProcesso">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getEstadoDistribuicaoProcesso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoComunicacaoProcesso">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getEstadoComunicacaoProcesso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalizarProcesso">
+      <soap12:operation soapAction="http://tempuri.org/ISoapApi/getLocalizarProcesso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapApi">
+    <wsdl:port name="WSHttpBinding_ISoapApi" binding="tns:WSHttpBinding_ISoapApi">
+      <soap12:address location="https://citiusnext.qualidade.local/CitiusNext/Externals/ServiceLayer/RoundComb.ServiceLayer.SoapApi.SoapApi.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://citiusnext.qualidade.local/CitiusNext/Externals/ServiceLayer/RoundComb.ServiceLayer.SoapApi.SoapApi.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

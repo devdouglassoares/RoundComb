@@ -1,0 +1,16 @@
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\NLog.config
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.DataAccess.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.DataAccess.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\NLog.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\RoundComb.Commons.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\bin\Release\NLog.xml
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\obj\Release\RoundComb.DataAccess.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\obj\Release\RoundComb.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\obj\Release\RoundComb.DataAccess.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\obj\Release\RoundComb.DataAccess.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\obj\Release\RoundComb.DataAccess.pdb

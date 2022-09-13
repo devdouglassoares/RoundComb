@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{693FF633-F661-4A13-9B04-A06CD3EACA69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Roundcomb.Core</RootNamespace>
+    <AssemblyName>Roundcomb.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RoundCombDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombRelease|AnyCPU'">
+    <OutputPath>bin\RoundCombRelease\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\PropertyApplicationFormDocumentConfig.cs" />
+    <Compile Include="Base\PropertyApplicationFormDocumentConfigBase.cs" />
+    <Compile Include="Dtos\PropertyApplicationFormDocumentConfigDto.cs" />
+    <Compile Include="Base\PropertyCustomerConsumingMappingBase.cs" />
+    <Compile Include="Dtos\PropertyApplicationFormInstanceDto.cs" />
+    <Compile Include="Dtos\PropertyApplicationFormNoAnswerDto.cs" />
+    <Compile Include="Dtos\PropertyApplicationRejectRequestModel.cs" />
+    <Compile Include="Dtos\PropertyCustomerConsumingMappingDto.cs" />
+    <Compile Include="Dtos\PropertyFormConfigurationSettingDto.cs" />
+    <Compile Include="Entities\PropertyApplicationFormInstance.cs" />
+    <Compile Include="Entities\PropertyApplicationFormInstanceBase.cs" />
+    <Compile Include="Entities\PropertyCustomerConsumingMapping.cs" />
+    <Compile Include="Entities\PropertyFormConfigurationSetting.cs" />
+    <Compile Include="Exceptions\PropertyAlreadyAppliedException.cs" />
+    <Compile Include="Exceptions\PropertyApplicationInvalidOwnershipApprovalException.cs" />
+    <Compile Include="MappingConfigurations\RoundcombMappingRegistration.cs" />
+    <Compile Include="Permissions\RoundcombPermissions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRoundcombRepository.cs" />
+    <Compile Include="Services\IPropertyApplicationFormInstanceService.cs" />
+    <Compile Include="Services\IPropertyCustomerConsumingMappingService.cs" />
+    <Compile Include="Services\IPropertyFormConfigService.cs" />
+    <Compile Include="Services\IPropertyVendorService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\core\Core.DynamicProperties\Core.DynamicProperties.csproj">
+      <Project>{BFE1AA1E-619E-482E-BA2F-8615CDA0B984}</Project>
+      <Name>Core.DynamicProperties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\core\Core\Core.csproj">
+      <Project>{551EF766-3D22-4DD9-B13B-358A4D85EDB9}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\membership\server\Membership.Core\Membership.Core.csproj">
+      <Project>{B8F34A32-2595-4243-A83B-F030319BD3C9}</Project>
+      <Name>Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\productManagement\server\ProductManagement.Core\ProductManagement.Core.csproj">
+      <Project>{f89151f2-880c-4453-b69b-70b4233a8bb4}</Project>
+      <Name>ProductManagement.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

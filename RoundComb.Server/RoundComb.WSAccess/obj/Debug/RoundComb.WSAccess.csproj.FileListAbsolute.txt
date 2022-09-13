@@ -1,0 +1,14 @@
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/NLog.config
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.WSAccess.dll.config
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.WSAccess.dll
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.WSAccess.pdb
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.WSAccess.dll.CodeAnalysisLog.xml
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.WSAccess.dll.lastcodeanalysissucceeded
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.csproj.App.config
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.csprojAssemblyReference.cache
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.csproj.CoreCompileInputs.cache
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.csproj.CopyComplete
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.dll
+C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.pdb
+/home/douglas/Downloads/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.dll
+/home/douglas/Downloads/RoundComb.Server/RoundComb.WSAccess/obj/Debug/RoundComb.WSAccess.pdb

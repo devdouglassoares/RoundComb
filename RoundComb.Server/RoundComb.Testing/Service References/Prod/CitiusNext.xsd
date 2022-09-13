@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RespostaDocumento">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Documento" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="tns:Documento" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaDocumento" nillable="true" type="tns:RespostaDocumento" />
+  <xs:complexType name="RespostaBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idErro" type="xs:int" />
+      <xs:element minOccurs="0" name="msgErro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespostaBase" nillable="true" type="tns:RespostaBase" />
+  <xs:complexType name="Documento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bytes" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Filename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="infoTecnica" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Documento" nillable="true" type="tns:Documento" />
+  <xs:complexType name="MessageExternal">
+    <xs:sequence>
+      <xs:element name="msgId" nillable="true" type="xs:string" />
+      <xs:element name="msgDate" type="xs:dateTime" />
+      <xs:element name="msgSenderId" nillable="true" type="xs:string" />
+      <xs:element name="msgReceiverId" nillable="true" type="xs:string" />
+      <xs:element name="msgTypeId" type="xs:int" />
+      <xs:element name="msgType" nillable="true" type="xs:string" />
+      <xs:element name="msgExternalRef" nillable="true" type="xs:string" />
+      <xs:element name="msgBody" nillable="true" type="xs:string" />
+      <xs:element name="msgUser" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MessageExternal" nillable="true" type="tns:MessageExternal" />
+  <xs:complexType name="RespostaMessageExternalIdentificador">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MessageExternalIdentificador" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="tns:MessageExternalIdentificador" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaMessageExternalIdentificador" nillable="true" type="tns:RespostaMessageExternalIdentificador" />
+  <xs:complexType name="MessageExternalIdentificador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idQueue" type="xs:int" />
+      <xs:element minOccurs="0" name="msgId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MessageExternalIdentificador" nillable="true" type="tns:MessageExternalIdentificador" />
+  <xs:complexType name="RespostaSimpleMessage">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SimpleMessage" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="tns:SimpleMessage" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaSimpleMessage" nillable="true" type="tns:RespostaSimpleMessage" />
+  <xs:complexType name="SimpleMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimpleMessage" nillable="true" type="tns:SimpleMessage" />
+  <xs:complexType name="RespostaArrayOfTribunalExternal">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfTribunalExternal" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="tns:ArrayOfTribunalExternal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaArrayOfTribunalExternal" nillable="true" type="tns:RespostaArrayOfTribunalExternal" />
+  <xs:complexType name="ArrayOfTribunalExternal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TribunalExternal" nillable="true" type="tns:TribunalExternal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTribunalExternal" nillable="true" type="tns:ArrayOfTribunalExternal" />
+  <xs:complexType name="TribunalExternal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="guidTribunal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idTribunal" type="xs:int" />
+      <xs:element minOccurs="0" name="isAtivo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="lstUnidadesOrganicas" nillable="true" type="tns:ArrayOfUnidadeOrganicaExternal" />
+      <xs:element minOccurs="0" name="nif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="tribunal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TribunalExternal" nillable="true" type="tns:TribunalExternal" />
+  <xs:complexType name="ArrayOfUnidadeOrganicaExternal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UnidadeOrganicaExternal" nillable="true" type="tns:UnidadeOrganicaExternal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUnidadeOrganicaExternal" nillable="true" type="tns:ArrayOfUnidadeOrganicaExternal" />
+  <xs:complexType name="UnidadeOrganicaExternal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cPostal3" type="xs:int" />
+      <xs:element minOccurs="0" name="cPostal4" type="xs:int" />
+      <xs:element minOccurs="0" name="eMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="guidTribunal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="guidUnidadeOrganica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idTribunal" type="xs:int" />
+      <xs:element minOccurs="0" name="idUnidadeOrganica" type="xs:int" />
+      <xs:element minOccurs="0" name="isAtivo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isUnidadeCentral" type="xs:boolean" />
+      <xs:element minOccurs="0" name="localidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="morada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="moradaComplemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="telefone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="tribunal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unidadeOrganica" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnidadeOrganicaExternal" nillable="true" type="tns:UnidadeOrganicaExternal" />
+  <xs:complexType name="RespostaArrayOfUnidadeOrganicaExternal">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfUnidadeOrganicaExternal" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="tns:ArrayOfUnidadeOrganicaExternal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RespostaArrayOfUnidadeOrganicaExternal" nillable="true" type="tns:RespostaArrayOfUnidadeOrganicaExternal" />
+  <xs:complexType name="Respostastring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Resposta{0}" Namespace="http://schemas.datacontract.org/2004/07/CitiusNext.External.Interoperability.DataContracts" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RespostaBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="entidade" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Respostastring" nillable="true" type="tns:Respostastring" />
+</xs:schema>

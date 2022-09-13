@@ -1,0 +1,11 @@
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\Bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\Bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\Bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\Bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csprojAssemblyReference.cache

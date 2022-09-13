@@ -1,0 +1,322 @@
+[
+  {
+    "name": "core",
+    "path": "../core",
+    "solutionFile": "Core.sln",
+    "dependencies": []
+  },
+  {
+    "name": "membership",
+    "path": "membership/server",
+    "solutionFile": "Membership.sln",
+    "publishWebProject": "Membership.Api/Membership.Api.csproj",
+    "publishFolderName": "membership.api",
+    "publishBaseFolder": "Membership.Api",
+    "dependencies": [
+      "core",
+      "notifyService"
+    ]
+  },
+  {
+    "name": "common",
+    "path": "common/server",
+    "solutionFile": "common.sln",
+    "publishBaseFolder": "Common.Api",
+    "publishWebProject": "Common.Api/Common.Api.csproj",
+    "publishFolderName": "common.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "socialMedia.facebook",
+    "path": "socialMedia.facebook/server",
+    "solutionFile": "Membership.FacebookOAuthIntegration.sln",
+    "publishBaseFolder": "Membership.FacebookOAuthIntegration",
+    "publishWebProject": "Membership.FacebookOAuthIntegration/Membership.FacebookOAuthIntegration.csproj",
+    "publishFolderName": "membership.api\\Modules\\Membership.FacebookOAuthIntegration",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "notifyService",
+    "path": "notifyService/server",
+    "solutionFile": "NotifyService.sln",
+    "publishBaseFolder": "NotifyService.Api",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "customForm",
+    "path": "customForm/server",
+    "solutionFile": "CustomForm.sln",
+    "publishBaseFolder": "CustomForm.Api",
+    "publishWebProject": "CustomForm.Api/CustomForm.Api.csproj",
+    "publishFolderName": "customForm.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "productManagement",
+    "path": "productManagement/server",
+    "solutionFile": "L35ProductManagement.sln",
+    "publishBaseFolder": "L35ProductManagement.Api",
+    "publishWebProject": "L35ProductManagement.Api/L35ProductManagement.Api.csproj",
+    "publishFolderName": "propertymanagement.api",
+    "dependencies": [
+      "core",
+      "membership",
+      "locationService"
+    ]
+  },
+  {
+    "name": "upload",
+    "path": "upload/server",
+    "solutionFile": "Upload.Api.sln",
+    "publishBaseFolder": "Upload.Api",
+    "publishWebProject": "Upload.Api/Upload.Api.csproj",
+    "publishFolderName": "upload.api",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "locationService",
+    "path": "locationService/server",
+    "solutionFile": "LocationService.Library.sln",
+    "publishBaseFolder": "LocationService.Api",
+    "publishWebProject": "LocationService.Api/LocationService.Api.csproj",
+    "publishFolderName": "location.api",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "membershipLocation",
+    "path": "membershipLocation/server",
+    "solutionFile": "MembershipLocationAdapter.sln",
+    "publishBaseFolder": "MembershipLocation.Api",
+    "publishWebProject": "MembershipLocation.Api/MembershipLocation.Api.csproj",
+    "publishFolderName": "membership.api\\Modules\\MembershipLocation.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "paymentGateway.paypal",
+    "path": "paymentGateway.paypal/server",
+    "solutionFile": "PaymentGateway.Paypal.Api.sln",
+    "publishBaseFolder": "PaymentGateway.Paypal.Api",
+    "publishWebProject": "PaymentGateway.Paypal.Api/PaymentGateway.Paypal.Api.csproj",
+    "publishFolderName": "paymentGateway.paypal.api",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "paymentGateway.stripe",
+    "path": "paymentGateway.stripe/server",
+    "solutionFile": "PaymentGateway.Stripe.Api.sln",
+    "publishBaseFolder": "PaymentGateway.Stripe.Api",
+    "publishWebProject": "PaymentGateway.Stripe.Api/PaymentGateway.Stripe.Api.csproj",
+    "publishFolderName": "paymentGateway.stripe.api",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "subscription",
+    "path": "subscription/server",
+    "solutionFile": "Subscription.Api.sln",
+    "publishBaseFolder": "Subscription.Api",
+    "publishWebProject": "Subscription.Api/Subscription.Api.csproj",
+    "publishFolderName": "subscription.api",
+    "dependencies": [
+      "core",
+      "membership",
+      "paymentGateway.stripe"
+    ]
+  },
+  {
+    "name": "newsletter",
+    "path": "newsletter/server",
+    "solutionFile": "Newsletter.sln",
+    "publishBaseFolder": "Newsletter.Api",
+    "publishWebProject": "Newsletter.Api/Newsletter.Api.csproj",
+    "publishFolderName": "newsletter.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "ecommerce",
+    "path": "ecommerce/server",
+    "solutionFile": "Ecommerce.Api.sln",
+    "publishBaseFolder": "Ecommerce.Api",
+    "publishWebProject": "Ecommerce.Api/Ecommerce.Api.csproj",
+    "publishFolderName": "productManagement.api\\Modules\\ecommerce.api",
+    "dependencies": [
+      "core",
+      "productManagement"
+    ]
+  },
+  {
+    "name": "roundcomb",
+    "path": "roundcomb/server",
+    "solutionFile": "RoundcombService.sln",
+    "publishBaseFolder": "Roundcomb.Api",
+    "publishWebProject": "Roundcomb.Api/Roundcomb.Api.csproj",
+    "publishFolderName": "propertyManagement.api\\Modules\\roundcomb.api",
+    "dependencies": [
+      "core",
+      "customForm",
+      "productManagement"
+    ]
+  },
+  {
+    "name": "verybest",
+    "path": "verybest/server",
+    "solutionFile": "VerybestService.sln",
+    "publishBaseFolder": "Verybest.Ecommerce.Api",
+    "publishWebProject": "Verybest.Ecommerce.Api/Verybest.Ecommerce.Api.csproj",
+    "publishFolderName": "productManagement.api\\Modules\\verybest.ecommerce.api",
+    "dependencies": [
+      "core",
+      "productManagement"
+    ]
+  },
+  {
+    "name": "verybestinternal",
+    "path": "verybestinternal/server",
+    "solutionFile": "VerybestInternalService.sln",
+    "publishBaseFolder": "VerybestInternalService",
+    "publishWebProject": "VerybestInternalService/VerybestInternalService.csproj",
+    "publishFolderName": "verybestinternal.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "scheduler",
+    "path": "scheduler/server",
+    "solutionFile": "Lean35Scheduler.sln",
+    "publishBaseFolder": "Scheduler.Api",
+    "publishWebProject": "Scheduler.Api/Scheduler.Api.csproj",
+    "publishFolderName": "scheduler.api",
+    "deployWinService": "Scheduler.NotificationsService",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "timer",
+    "path": "timer/server",
+    "solutionFile": "Timer.sln",
+    "publishBaseFolder": "Timer.Api",
+    "publishWebProject": "Timer.Api/Timer.Api.csproj",
+    "publishFolderName": "timer.api",
+    "deployWinService": "Timer.Service",
+    "dependencies": [
+      "core",
+      "taskRunner"
+    ]
+  },
+  {
+    "name": "projectsManagement",
+    "path": "projectsManagement/server",
+    "solutionFile": "ProjectsManagement.sln",
+    "publishBaseFolder": "ProjectsManagement.Api",
+    "publishWebProject": "ProjectsManagement.Api/ProjectsManagement.Api.csproj",
+    "publishFolderName": "projectsManagement.api",
+    "dependencies": [
+      "core",
+      "membership",
+      "documentsManagement"
+    ]
+  },
+  {
+    "name": "documentsManagement",
+    "path": "documentsManagement/server",
+    "solutionFile": "DocumentsManagement.sln",
+    "dependencies": [
+      "core"
+    ]
+  },
+  {
+    "name": "notifications",
+    "path": "notifications/server",
+    "solutionFile": "Notification.Api.sln",
+    "publishBaseFolder": "Notification.Api",
+    "publishWebProject": "Notification.Api/Notification.Api.csproj",
+    "publishFolderName": "notifications.api",
+    "dependencies": [
+    ]
+  },
+  {
+    "name": "mbac",
+    "path": "mbac/server",
+    "solutionFile": "Mbac.sln",
+    "publishBaseFolder": "Mbac.Api",
+    "publishWebProject": "Mbac.Api/Mbac.Api.csproj",
+    "publishFolderName": "mbac.api",
+    "dependencies": [
+      "core",
+      "membership",
+      "scheduler"
+    ]
+  },
+  {
+    "name": "documents",
+    "path": "documents/server",
+    "solutionFile": "L35Documents.sln",
+    "publishBaseFolder": "L35Documents.Api",
+    "publishWebProject": "L35Documents.Api/L35Documents.Api.csproj",
+    "publishFolderName": "documents.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "taskRunner",
+    "path": "taskRunner",
+    "solutionFile": "TaskRunner.sln",
+    "dependencies": [
+    ]
+  },
+  {
+    "name": "ticketManagement",
+    "path": "ticketManagement/server",
+    "solutionFile": "TicketManagement.sln",
+    "publishBaseFolder": "TicketManagement.Api",
+    "publishWebProject": "TicketManagement.Api/TicketManagement.Api.csproj",
+    "publishFolderName": "ticketManagement.api",
+    "dependencies": [
+      "core",
+      "membership"
+    ]
+  },
+  {
+    "name": "vonageReports",
+    "path": "vonageReports/server",
+    "solutionFile": "L35Vonage.sln",
+    "publishBaseFolder": "L35Vonage.Api",
+    "publishWebProject": "L35Vonage.Api/L35Vonage.Api.csproj",
+    "publishFolderName": "vonage.api",
+    "dependencies": [
+      "core",
+      "membership",
+      "notifyService"
+    ]
+  }
+]

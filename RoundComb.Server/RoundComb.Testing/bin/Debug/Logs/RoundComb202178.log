@@ -1,0 +1,27 @@
+2021-07-08 12:54:37|ERROR|1|System.String|ca991a69-d698-4f82-befb-84879d1e3638| Procedure or function 'spc_createChatRoom' expects parameter '@Resp', which was not supplied.
+System.Exception: System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'spc_createChatRoom' expects parameter '@Resp', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at RoundComb.Commons.Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons\Dapper.cs:line 3405
+   at RoundComb.Commons.Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons\Dapper.cs:line 1348
+   at RoundComb.Commons.Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons\Dapper.cs:line 1222
+   at RoundComb.DataAccess.DataAccess.createNewChatRoom(String JSONObject) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 62
+ClientConnectionId:9df4c6a3-38ba-41d8-a1b0-4f59a6668a83
+Error Number:201,State:4,Class:16
+
+2021-07-08 13:35:26|ERROR|1|System.String|b22ab2df-7e8d-4ce9-92ea-90a9ee6bfc46| Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+System.Exception: System.Exception: Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+   at RoundComb.DataAccess.DataAccess.checkParamsError(DynamicParameters parameters) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 33
+   at RoundComb.DataAccess.DataAccess.createNewChatRoom(String JSONObject) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 63
+
+2021-07-08 13:36:16|ERROR|1|System.String|5104e67a-389c-4437-942f-0e74ab80b1d5| Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+System.Exception: System.Exception: Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+   at RoundComb.DataAccess.DataAccess.checkParamsError(DynamicParameters parameters) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 33
+   at RoundComb.DataAccess.DataAccess.createNewChatRoom(String JSONObject) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 63
+

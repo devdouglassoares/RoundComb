@@ -1,0 +1,15 @@
+2021-07-09 23:30:46|ERROR|1|System.String|6d499b55-074b-401a-bb2f-a5a5c41c7f24| Object reference not set to an instance of an object.
+System.Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoundComb.DataAccess.ConnectionProvider.OpenConnectionDBServer() in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\ConnectionProvider.cs:line 12
+   at RoundComb.DataAccess.DataAccess.GetMyListOfEvents(Int32 iduser) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 94
+
+2021-07-09 23:31:08|ERROR|1|System.String|9a36e17c-2004-4cba-8a1b-728899090fa8| Object reference not set to an instance of an object.
+System.Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoundComb.DataAccess.ConnectionProvider.OpenConnectionDBServer() in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\ConnectionProvider.cs:line 12
+   at RoundComb.DataAccess.DataAccess.GetMyListOfEvents(Int32 iduser) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 94
+
+2021-07-09 23:31:44|ERROR|1|System.String|79f325a6-d057-483b-ba07-fb73add14ca2| Object reference not set to an instance of an object.
+System.Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoundComb.DataAccess.ConnectionProvider.OpenConnectionDBServer() in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\ConnectionProvider.cs:line 12
+   at RoundComb.DataAccess.DataAccess.GetMyListOfEvents(Int32 iduser) in C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.DataAccess\DataAccess.cs:line 94
+

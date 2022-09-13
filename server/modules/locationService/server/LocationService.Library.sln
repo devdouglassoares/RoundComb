@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationService.Api", "LocationService.Api\LocationService.Api.csproj", "{526C90B4-7C7A-4B47-818C-D08F688CA5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationService.Library", "LocationService.Library\LocationService.Library.csproj", "{608D90C2-82DB-44BF-A749-6ACF825F855E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\..\..\core\Core\Core.csproj", "{551EF766-3D22-4DD9-B13B-358A4D85EDB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Core", "1. Core", "{CCF40E32-C266-4173-AEF9-2B09DAACFEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CastleWindsorIntegration", "..\..\..\core\Core.CastleWindsorIntegration\Core.CastleWindsorIntegration.csproj", "{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationService.RestClient", "LocationService.RestClient\LocationService.RestClient.csproj", "{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		RoundCombDebug|Any CPU = RoundCombDebug|Any CPU
+		RoundCombRelease|Any CPU = RoundCombRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.RoundCombDebug|Any CPU.ActiveCfg = RoundCombDebug|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.RoundCombDebug|Any CPU.Build.0 = RoundCombDebug|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.RoundCombRelease|Any CPU.ActiveCfg = RoundCombRelease|Any CPU
+		{526C90B4-7C7A-4B47-818C-D08F688CA5BB}.RoundCombRelease|Any CPU.Build.0 = RoundCombRelease|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.RoundCombDebug|Any CPU.ActiveCfg = RoundCombDebug|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.RoundCombDebug|Any CPU.Build.0 = RoundCombDebug|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.RoundCombRelease|Any CPU.ActiveCfg = RoundCombRelease|Any CPU
+		{608D90C2-82DB-44BF-A749-6ACF825F855E}.RoundCombRelease|Any CPU.Build.0 = RoundCombRelease|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.RoundCombDebug|Any CPU.ActiveCfg = RoundcombDebug|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.RoundCombDebug|Any CPU.Build.0 = RoundcombDebug|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.RoundCombRelease|Any CPU.ActiveCfg = RoundCombRelease|Any CPU
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9}.RoundCombRelease|Any CPU.Build.0 = RoundCombRelease|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.RoundCombDebug|Any CPU.ActiveCfg = RoundcombDebug|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.RoundCombDebug|Any CPU.Build.0 = RoundcombDebug|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.RoundCombRelease|Any CPU.ActiveCfg = RoundCombRelease|Any CPU
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC}.RoundCombRelease|Any CPU.Build.0 = RoundCombRelease|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.RoundCombDebug|Any CPU.ActiveCfg = RoundcombDebug|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.RoundCombDebug|Any CPU.Build.0 = RoundcombDebug|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.RoundCombRelease|Any CPU.ActiveCfg = RoundCombRelease|Any CPU
+		{AE624E94-C8B4-4154-93A3-ABF1FE0F828E}.RoundCombRelease|Any CPU.Build.0 = RoundCombRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{551EF766-3D22-4DD9-B13B-358A4D85EDB9} = {CCF40E32-C266-4173-AEF9-2B09DAACFEA4}
+		{18B1D460-9B53-4CCF-8C6C-68C001DE97FC} = {CCF40E32-C266-4173-AEF9-2B09DAACFEA4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57B31379-661E-47C4-AF15-648778E56A38}
+	EndGlobalSection
+EndGlobal

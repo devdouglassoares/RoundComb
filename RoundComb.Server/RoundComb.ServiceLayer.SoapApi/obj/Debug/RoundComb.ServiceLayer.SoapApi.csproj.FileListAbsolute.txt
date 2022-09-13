@@ -1,0 +1,16 @@
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer\obj\Debug\RoundComb.ServiceLayer.SoapApi.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer\obj\Debug\RoundComb.ServiceLayer.SoapApi.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\NLog.config
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServiceLayer.SoapApi.dll.config
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServiceLayer.SoapApi.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServiceLayer.SoapApi.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServiceLayer.SoapApi.dll.CodeAnalysisLog.xml
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServiceLayer.SoapApi.dll.lastcodeanalysissucceeded
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer\obj\Debug\RoundComb.ServiceLayer.SoapApi.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer\obj\Debug\RoundComb.ServiceLayer.SoapApi.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer\obj\Debug\RoundComb.ServiceLayer.SoapApi.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.SoapApi\obj\Debug\RoundComb.ServiceLayer.SoapApi.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.SoapApi\obj\Debug\RoundComb.ServiceLayer.SoapApi.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.SoapApi\obj\Debug\RoundComb.ServiceLayer.SoapApi.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.SoapApi\obj\Debug\RoundComb.ServiceLayer.SoapApi.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.SoapApi\obj\Debug\RoundComb.ServiceLayer.SoapApi.pdb

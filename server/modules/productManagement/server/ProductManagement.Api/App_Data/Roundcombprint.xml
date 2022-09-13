@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pagedef pagesize="A4" margin_left="20" margin_right="20" margin_top="10" margin_bottom="10" pageorientation="portrait">
+    <header>
+        <div>
+            <space width="33.33333333%" size="5" />
+            <image src="http://app.verybestusa.com/assets/logo_print_products.png"
+                   fallbacksrc="http://app.verybestusa.com/assets/images/photo_not_available.png" width="170" height="80" align="center" />
+        </div>
+        <div>
+            <text width="100%" align="center" fontsize="10" fonttype="Helvetica" text="Very Best Inc. 1012 Wilso Dr. Baltimore, MD. 21223. 410-644-1275" />
+        </div>
+        <space size="5" />
+        <div>
+            <text width="33%" align="left" text="{FILTERBY}" fontsize="10" fonttype="Helvetica" fontstyle="italic">
+                <var name="{FILTERBY}" />
+            </text>
+        </div>
+        <space size="5" />
+    </header>
+
+    <table cellperrow="4" cellwidth="0.5,2,4,3.5" width="100%">
+        <thead>
+            <tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td border="All" rowspan="2" verticalalign="middle" padding="2" fontsize="12" fonttype="Helvetica" fontstyle="bold">
+                    <text width="100%" align="center" text="{_ROW_INDEX_}">
+                        <var name="{_ROW_INDEX_}" />
+                    </text>
+                </td>
+                <td border="Top,Bottom,Right" rowspan="2" verticalalign="middle">
+                    <image src="{ImageUrl}" fallbacksrc="http://app.verybestusa.com/assets/images/photo_not_available.png" width="75" height="75" align="center">
+                        <var name="{ImageUrl}" />
+                    </image>
+                </td>
+                <td border="Top,Right" colspan="2" fontsize="12" paddingleft="10" paddingtop="10" fonttype="Helvetica" fontstyle="bold">
+                    <text width="100%" align="left" text="{Name}">
+                        <var name="{Name}" />
+                    </text>
+                </td>
+                <td border="Bottom" fontsize="10" fonttype="Helvetica" fontstyle="italic" padding="10">
+                    <text width="100%" align="left" text="Category: {Category.Name}">
+                        <var name="{Category.Name}" />
+                    </text>
+                    <space size="5" />
+
+                    <text width="100%" align="left" text="Product No: {ExternalKey}">
+                        <var name="{ExternalKey}" />
+                    </text>
+                    <space size="5" />
+
+                    <text width="100%" align="left" text="Unit Price: {UnitPrice}">
+                        <var name="{UnitPrice}" formatter="number" formatterparameters="formatstring=C;defaultvalue=0.0" optional="yes"/>
+                    </text>
+                    <space size="5" />
+
+                    <text width="100%" align="left" text="Case Price: {Price}">
+                        <var name="{Price}" formatter="number" formatterparameters="formatstring=C;defaultvalue=0.0" optional="yes" />
+                    </text>
+                </td>
+                <td border="Bottom,Right" fontsize="10" fonttype="Helvetica" fontstyle="italic" padding="10">
+                    <text width="100%" text="Status: Active">
+                        <var name= "{IsActive}"/>
+                    </text>
+
+                    <space size="5" />
+                    <text width="100%" text="Case Pack: {ExtensionProperties.PkPerCase}">
+                        <var name= "{ExtensionProperties.PkPerCase}"/>
+                    </text>
+
+                    <space size="5" />
+
+                    <text width="100%" text="UPC: {UnitUpc}">
+                        <var name= "{UnitUpc}"/>
+                    </text>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer y="20" absolute="yes">
+        <row fontsize="9" fonttype="Helvetica">
+            <text width="50%" align="left" text="Print Date: {PRINT_DATE}">
+                <var name="{PRINT_DATE}" formatter="DateTime" formatterparameters="formatstring=MMMM/dd/yyyy hh:mm:ss tt;" />
+            </text>
+            <pagenumber width="50%" text="Page {__PAGE__} of {__TOTALPAGE__}" align="right">
+                <var name="{__PAGE__}" optional="yes" />
+                <var name="{__TOTALPAGE__}" optional="yes"/>
+            </pagenumber>
+        </row>
+    </footer>
+</pagedef>

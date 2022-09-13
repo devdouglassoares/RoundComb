@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52F32617-F41A-4218-A093-A94C56F99C14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomForm.Data</RootNamespace>
+    <AssemblyName>CustomForm.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RoundCombDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombRelease|AnyCPU'">
+    <OutputPath>bin\RoundCombRelease\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbContexts\CustomFormDataContext.cs" />
+    <Compile Include="EntityTypeConfigs\FormConfigurationEntityTypeConfig.cs" />
+    <Compile Include="EntityTypeConfigs\FormFieldEntityTypeConfig.cs" />
+    <Compile Include="EntityTypeConfigs\FormFieldFormConfigurationEntityTypeConfig.cs" />
+    <Compile Include="EntityTypeConfigs\FormFieldValueEntityTypeConfig.cs" />
+    <Compile Include="EntityTypeConfigs\FormInstanceEntityTypeConfig.cs" />
+    <Compile Include="Migrations\201605161440521_Add_InitialData_CustomForm.cs" />
+    <Compile Include="Migrations\201605161440521_Add_InitialData_CustomForm.Designer.cs">
+      <DependentUpon>201605161440521_Add_InitialData_CustomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605200611418_Add_FormCode_To_FormConfiguration.cs" />
+    <Compile Include="Migrations\201605200611418_Add_FormCode_To_FormConfiguration.Designer.cs">
+      <DependentUpon>201605200611418_Add_FormCode_To_FormConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606040242112_Add_CheckboxesValueColumn.cs" />
+    <Compile Include="Migrations\201606040242112_Add_CheckboxesValueColumn.Designer.cs">
+      <DependentUpon>201606040242112_Add_CheckboxesValueColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606040707313_Add_DynamicFieldConfigurationToFormConfig.cs" />
+    <Compile Include="Migrations\201606040707313_Add_DynamicFieldConfigurationToFormConfig.Designer.cs">
+      <DependentUpon>201606040707313_Add_DynamicFieldConfigurationToFormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607111517598_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs" />
+    <Compile Include="Migrations\201607111517598_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.Designer.cs">
+      <DependentUpon>201607111517598_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607121035340_Correct_AuditFields_Max_Length.cs" />
+    <Compile Include="Migrations\201607121035340_Correct_AuditFields_Max_Length.Designer.cs">
+      <DependentUpon>201607121035340_Correct_AuditFields_Max_Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605161440521_Add_InitialData_CustomForm.resx">
+      <DependentUpon>201605161440521_Add_InitialData_CustomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605200611418_Add_FormCode_To_FormConfiguration.resx">
+      <DependentUpon>201605200611418_Add_FormCode_To_FormConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606040242112_Add_CheckboxesValueColumn.resx">
+      <DependentUpon>201606040242112_Add_CheckboxesValueColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606040707313_Add_DynamicFieldConfigurationToFormConfig.resx">
+      <DependentUpon>201606040707313_Add_DynamicFieldConfigurationToFormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607111517598_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.resx">
+      <DependentUpon>201607111517598_Added_UploadedPaths_Support_For_Dynamic_Upload_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607121035340_Correct_AuditFields_Max_Length.resx">
+      <DependentUpon>201607121035340_Correct_AuditFields_Max_Length.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\core\Core\Core.csproj">
+      <Project>{551ef766-3d22-4dd9-b13b-358a4d85edb9}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomForm.Core\CustomForm.Core.csproj">
+      <Project>{0638EB9B-3505-40FB-BC61-A7C673D129BF}</Project>
+      <Name>CustomForm.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

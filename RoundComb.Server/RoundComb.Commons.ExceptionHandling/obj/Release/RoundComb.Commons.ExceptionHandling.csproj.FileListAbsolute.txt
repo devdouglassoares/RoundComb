@@ -1,0 +1,14 @@
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\Bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\Bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\Bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\Bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.pdb

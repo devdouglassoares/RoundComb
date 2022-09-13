@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9959D75-95CC-4D12-BB1E-403C8C07ECA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Membership.Library</RootNamespace>
+    <AssemblyName>Membership.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RoundCombDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RoundCombRelease|AnyCPU'">
+    <OutputPath>bin\RoundCombRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CommonServiceLocator.WindsorAdapter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.WindsorAdapter.1.0\lib\NET35\CommonServiceLocator.WindsorAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetAuth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetAuth.1.0.5\lib\net40\DotNetAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="notifyService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\notifyService\notifyService\bin\Debug\notifyService.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.3\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\CustomerDocumentService.cs" />
+    <Compile Include="Contracts\ICustomersService.cs" />
+    <Compile Include="Dto\ConnectionInfoDto.cs" />
+    <Compile Include="Dto\ConnectionInfoRequestResultDto.cs" />
+    <Compile Include="Dto\Customer\ContactDto.cs" />
+    <Compile Include="Dto\Customer\CompanyDocumentDto.cs" />
+    <Compile Include="Dto\Customer\PartnershipDto.cs" />
+    <Compile Include="Dto\Customer\SiteDto.cs" />
+    <Compile Include="Dto\Customer\VendorDto.cs" />
+    <Compile Include="Dto\EmailApplyCareerModel.cs" />
+    <Compile Include="Dto\ForgotPasswordModel.cs" />
+    <Compile Include="Dto\EmailContactUsModel.cs" />
+    <Compile Include="Dto\ResetPasswordModel.cs" />
+    <Compile Include="Entities\Computer.cs" />
+    <Compile Include="Entities\ConnectionInfo.cs" />
+    <Compile Include="Entities\ConnectionInfoPinNumber.cs" />
+    <Compile Include="Entities\CustomerPartner.cs" />
+    <Compile Include="Entities\CustomerVendor.cs" />
+    <Compile Include="Entities\CompanyDocument.cs" />
+    <Compile Include="Entities\ProjectDescription.cs" />
+    <Compile Include="Entities\VendorType.cs" />
+    <Compile Include="Entities\Vendor.cs" />
+    <Compile Include="Entities\Partner.cs" />
+    <Compile Include="EventHandlers\DocumentAuthoringEventHandler.cs" />
+    <Compile Include="Contracts\IJiraService.cs" />
+    <Compile Include="Migrations\201603031044154_membership_init_migration.cs" />
+    <Compile Include="Migrations\201603031044154_membership_init_migration.Designer.cs">
+      <DependentUpon>201603031044154_membership_init_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603031241095_Add_CompanyAlias_To_Company_Table.cs" />
+    <Compile Include="Migrations\201603031241095_Add_CompanyAlias_To_Company_Table.Designer.cs">
+      <DependentUpon>201603031241095_Add_CompanyAlias_To_Company_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071342525_AddLocationIdForExternalLocationService.cs" />
+    <Compile Include="Migrations\201604071342525_AddLocationIdForExternalLocationService.Designer.cs">
+      <DependentUpon>201604071342525_AddLocationIdForExternalLocationService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604250930288_customer_child_entities_updated.cs" />
+    <Compile Include="Migrations\201604250930288_customer_child_entities_updated.Designer.cs">
+      <DependentUpon>201604250930288_customer_child_entities_updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605061546267_company_status_added.cs" />
+    <Compile Include="Migrations\201605061546267_company_status_added.Designer.cs">
+      <DependentUpon>201605061546267_company_status_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605121032307_status_valid_date_added.cs" />
+    <Compile Include="Migrations\201605121032307_status_valid_date_added.Designer.cs">
+      <DependentUpon>201605121032307_status_valid_date_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606070740031_add_masterCompanyId_to_company_table.cs" />
+    <Compile Include="Migrations\201606070740031_add_masterCompanyId_to_company_table.Designer.cs">
+      <DependentUpon>201606070740031_add_masterCompanyId_to_company_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607121036379_Correct_AuditFields_Max_Length.cs" />
+    <Compile Include="Migrations\201607121036379_Correct_AuditFields_Max_Length.Designer.cs">
+      <DependentUpon>201607121036379_Correct_AuditFields_Max_Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608090935291_Alter_ContactTable_Information.cs" />
+    <Compile Include="Migrations\201608090935291_Alter_ContactTable_Information.Designer.cs">
+      <DependentUpon>201608090935291_Alter_ContactTable_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608130457374_Added_ClientCompany_Id_Field.cs" />
+    <Compile Include="Migrations\201608130457374_Added_ClientCompany_Id_Field.Designer.cs">
+      <DependentUpon>201608130457374_Added_ClientCompany_Id_Field.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608130634555_ConfigureMaster_Children_Companies.cs" />
+    <Compile Include="Migrations\201608130634555_ConfigureMaster_Children_Companies.Designer.cs">
+      <DependentUpon>201608130634555_ConfigureMaster_Children_Companies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608221419578_Add_IsVirtualFlag_To_UserTable.cs" />
+    <Compile Include="Migrations\201608221419578_Add_IsVirtualFlag_To_UserTable.Designer.cs">
+      <DependentUpon>201608221419578_Add_IsVirtualFlag_To_UserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608231241118_ChangeCreateDateFieldName_UserTable.cs" />
+    <Compile Include="Migrations\201608231241118_ChangeCreateDateFieldName_UserTable.Designer.cs">
+      <DependentUpon>201608231241118_ChangeCreateDateFieldName_UserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608231243045_Add_Audit_Fields_To_User_Table.cs" />
+    <Compile Include="Migrations\201608231243045_Add_Audit_Fields_To_User_Table.Designer.cs">
+      <DependentUpon>201608231243045_Add_Audit_Fields_To_User_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610041109032_Change_DatetimeNullable_For_User.cs" />
+    <Compile Include="Migrations\201610041109032_Change_DatetimeNullable_For_User.Designer.cs">
+      <DependentUpon>201610041109032_Change_DatetimeNullable_For_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701070644154_Add_RegistrationDate_Field_To_UserTable.cs" />
+    <Compile Include="Migrations\201701070644154_Add_RegistrationDate_Field_To_UserTable.Designer.cs">
+      <DependentUpon>201701070644154_Add_RegistrationDate_Field_To_UserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705060654246_AddPasswordSaltColumn.cs" />
+    <Compile Include="Migrations\201705060654246_AddPasswordSaltColumn.Designer.cs">
+      <DependentUpon>201705060654246_AddPasswordSaltColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionProviders\MembershipPermissionsProvider.cs" />
+    <Compile Include="Services\ConnectionInfoService.cs" />
+    <Compile Include="Services\CustomersService.cs" />
+    <Compile Include="Contracts\IConnectionInfoService.cs" />
+    <Compile Include="Contracts\IUserRegistrationService.cs" />
+    <Compile Include="Services\ICompanyDynamicPropertyService.cs" />
+    <Compile Include="Services\IUserProfileDynamicPropertyService.cs" />
+    <Compile Include="Services\JiraService.cs" />
+    <Compile Include="Services\UserRegistrationService.cs" />
+    <Compile Include="Helpers\EuropeanVat.cs" />
+    <Compile Include="Helpers\GeoLocation.cs" />
+    <Compile Include="Contracts\ICompanyService.cs" />
+    <Compile Include="Contracts\ICompanySettingsService.cs" />
+    <Compile Include="Contracts\IUserProfileService.cs" />
+    <Compile Include="Contracts\IUserProfileValueService.cs" />
+    <Compile Include="Services\UserProfileValueService.cs" />
+    <Compile Include="Data\Context\MembershipContext.cs" />
+    <Compile Include="Dto\CompanyDto.cs" />
+    <Compile Include="Dto\CompanySettingsGroupDto.cs" />
+    <Compile Include="Dto\UserProfileModel.cs" />
+    <Compile Include="Dto\UserWithProfileModel.cs" />
+    <Compile Include="Extentions\CompanyExtentions.cs" />
+    <Compile Include="MappingRegistrations\MembershipMappingRegistration.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="Migrations\MembershipContextConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Services\CompanySettingsService.cs" />
+    <Compile Include="Services\UserProfileService.cs" />
+    <Compile Include="StartUp\MembershipAccessRightStartUpConfiguration.cs" />
+    <Compile Include="StartUp\MembershipRoleMigrationStartUpConfiguration.cs" />
+    <Compile Include="Templates\ForgotPasswordEmailTemplateModel.cs" />
+    <Compile Include="Templates\PasswordResetSuccessTemplateModel.cs" />
+    <Compile Include="Templates\Providers\MembershipTemplateProvider.cs" />
+    <Compile Include="Templates\UserActivationEmailTemplateModel.cs" />
+    <Compile Include="Templates\UserRegisteredAdminNotificationTemplateModel.cs" />
+    <Compile Include="Templates\UserRegistrationApprovalPendingAdminNotificationTemplateModel.cs" />
+    <Compile Include="Templates\UserRegistrationApprovedInformTemplateModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\Core.CastleWindsorIntegration\Core.CastleWindsorIntegration.csproj">
+      <Project>{18b1d460-9b53-4ccf-8c6c-68c001de97fc}</Project>
+      <Name>Core.CastleWindsorIntegration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Core.DynamicProperties\Core.DynamicProperties.csproj">
+      <Project>{bfe1aa1e-619e-482e-ba2f-8615cda0b984}</Project>
+      <Name>Core.DynamicProperties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Core.UploadService\Core.UploadService.csproj">
+      <Project>{63525160-10cb-421f-ae8d-35d9f7086fae}</Project>
+      <Name>Core.UploadService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\Core\Core.csproj">
+      <Project>{551ef766-3d22-4dd9-b13b-358a4d85edb9}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\documentsManagement\server\DocumentsManagement.Library\DocumentsManagement.Library.csproj">
+      <Project>{768DAB32-A55D-4DAE-B3CB-7B01E2FBEC1A}</Project>
+      <Name>DocumentsManagement.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Membership.Core\Membership.Core.csproj">
+      <Project>{b8f34a32-2595-4243-a83b-f030319bd3c9}</Project>
+      <Name>Membership.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603031044154_membership_init_migration.resx">
+      <DependentUpon>201603031044154_membership_init_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603031241095_Add_CompanyAlias_To_Company_Table.resx">
+      <DependentUpon>201603031241095_Add_CompanyAlias_To_Company_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071342525_AddLocationIdForExternalLocationService.resx">
+      <DependentUpon>201604071342525_AddLocationIdForExternalLocationService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604250930288_customer_child_entities_updated.resx">
+      <DependentUpon>201604250930288_customer_child_entities_updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605061546267_company_status_added.resx">
+      <DependentUpon>201605061546267_company_status_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605121032307_status_valid_date_added.resx">
+      <DependentUpon>201605121032307_status_valid_date_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606070740031_add_masterCompanyId_to_company_table.resx">
+      <DependentUpon>201606070740031_add_masterCompanyId_to_company_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607121036379_Correct_AuditFields_Max_Length.resx">
+      <DependentUpon>201607121036379_Correct_AuditFields_Max_Length.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608090935291_Alter_ContactTable_Information.resx">
+      <DependentUpon>201608090935291_Alter_ContactTable_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608130457374_Added_ClientCompany_Id_Field.resx">
+      <DependentUpon>201608130457374_Added_ClientCompany_Id_Field.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608130634555_ConfigureMaster_Children_Companies.resx">
+      <DependentUpon>201608130634555_ConfigureMaster_Children_Companies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608221419578_Add_IsVirtualFlag_To_UserTable.resx">
+      <DependentUpon>201608221419578_Add_IsVirtualFlag_To_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608231241118_ChangeCreateDateFieldName_UserTable.resx">
+      <DependentUpon>201608231241118_ChangeCreateDateFieldName_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608231243045_Add_Audit_Fields_To_User_Table.resx">
+      <DependentUpon>201608231243045_Add_Audit_Fields_To_User_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610041109032_Change_DatetimeNullable_For_User.resx">
+      <DependentUpon>201610041109032_Change_DatetimeNullable_For_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701070644154_Add_RegistrationDate_Field_To_UserTable.resx">
+      <DependentUpon>201701070644154_Add_RegistrationDate_Field_To_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705060654246_AddPasswordSaltColumn.resx">
+      <DependentUpon>201705060654246_AddPasswordSaltColumn.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\EventHandlers\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
