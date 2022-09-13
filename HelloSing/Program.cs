@@ -16,15 +16,16 @@ public class Example
         // config.AccessToken = "YOUR_BEARER_TOKEN";
 
         var apiInstance = new SignatureRequestApi(config);
+        var _apiInstance = new EmbeddedApi(config);
 
         var signer1 = new SubSignatureRequestSigner(
-            emailAddress: "douglas.gouveia.medilab@gmail.com",
+            emailAddress: "douglassoaresseven@gmail.com",
             name: "Dougras",
             order: 0
         );
 
         var signer2 = new SubSignatureRequestSigner(
-            emailAddress: "douglas.gouveia.medilab@gmail.com",
+            emailAddress: "douglassoaresseven@gmail.com",
             name: "Zico",
             order: 1
         );
@@ -37,39 +38,28 @@ public class Example
             defaultType: SubSigningOptions.DefaultTypeEnum.Draw
         );
 
-        var subFieldOptions = new SubFieldOptions(
-            dateFormat: SubFieldOptions.DateFormatEnum.DDMMYYYY
-        );
-
-        var metadata = new Dictionary<string, object>()
-        {
-            ["custom_id"] = 1234,
-            ["custom_text"] = "NDA #9"
-        };
-        //string pdfFilePath = "~/Downloads/example_signature_request.pdf";
         Stream streamEntrada = File.OpenRead(@"example_signature_request_.pdf");
-        //byte[] bytes = System.IO.File.ReadAllBytes(pdfFilePath);
 
-        var data = new SignatureRequestSendRequest(
-            title: "Flamengo Campeao.",
+        var data = new SignatureRequestCreateEmbeddedRequest(
+            clientId: "5bad73f4b04d61a61b823d07f4a2a0e1",
+            title: "NDA with Acme Co.",
             subject: "The NDA we talked about",
             message: "Please sign this NDA and then we can discuss more. Let me know if you have any questions.",
             signers: new List<SubSignatureRequestSigner>(){signer1, signer2},
-            ccEmailAddresses: new List<string>(){"douglas.gouveia.medilab@gmail.com", "teste@example.com"},
-           // fileUrl: new List<string>(){"https://app.hellosign.com/docs/example_signature_request.pdf"},
-          //  file: new List<Stream>().Add('~/Downloads/example_signature_request.pdf'),
+            ccEmailAddresses: new List<string>(){"douglas.gouveia.medilab@gmail.com"},
+            //fileUrl: new List<string>(){"https://app.hellosign.com/docs/example_signature_request.pdf"},
             file: new List<Stream>(){streamEntrada},
-            metadata: metadata,
             signingOptions: signingOptions,
-            fieldOptions: subFieldOptions,
             testMode: true,
             useTextTags: true
         );
 
         try
         {
-            var result = apiInstance.SignatureRequestSend(data);
+            var result = apiInstance.SignatureRequestCreateEmbedded(data);
             Console.WriteLine(result);
+            var URL = _apiInstance.EmbeddedSignUrl(result.signatureId);
+            Console.WriteLine(URL);
         }
         catch (ApiException e)
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZHjXfvaUhtmafifWEu43GuuVun9vcUeCV4wlkcA7YHptRkILTTy9ENfPYzDWccni/MCJAq2QDPwBUiCIV41rQw==",
+  "dgSpecHash": "HXmYgmoi81PRF+QnM26m77OBUKKeDTywz8+N7Oe8ZMChUsAkckXwNZCMV0uBCAmXP2GQzqsDcvyBsgAwxgbA2g==",
   "success": true,
-  "projectFilePath": "/home/douglas/Documentos/HelloSing/HelloSing.csproj",
+  "projectFilePath": "/home/douglas/Documentos/RoundComb/HelloSing/HelloSing.csproj",
   "expectedPackageFiles": [
     "/home/douglas/.nuget/packages/hellosign/6.0.0-beta.2/hellosign.6.0.0-beta.2.nupkg.sha512",
     "/home/douglas/.nuget/packages/hellosignapi/2.0.3/hellosignapi.2.0.3.nupkg.sha512",

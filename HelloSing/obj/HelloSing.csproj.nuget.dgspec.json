@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/douglas/Documentos/HelloSing/HelloSing.csproj": {}
+    "/home/douglas/Documentos/RoundComb/HelloSing/HelloSing.csproj": {}
   },
   "projects": {
-    "/home/douglas/Documentos/HelloSing/HelloSing.csproj": {
+    "/home/douglas/Documentos/RoundComb/HelloSing/HelloSing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/douglas/Documentos/HelloSing/HelloSing.csproj",
+        "projectUniqueName": "/home/douglas/Documentos/RoundComb/HelloSing/HelloSing.csproj",
         "projectName": "HelloSing",
-        "projectPath": "/home/douglas/Documentos/HelloSing/HelloSing.csproj",
+        "projectPath": "/home/douglas/Documentos/RoundComb/HelloSing/HelloSing.csproj",
         "packagesPath": "/home/douglas/.nuget/packages/",
-        "outputPath": "/home/douglas/Documentos/HelloSing/obj/",
+        "outputPath": "/home/douglas/Documentos/RoundComb/HelloSing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/douglas/.nuget/NuGet/NuGet.Config"
