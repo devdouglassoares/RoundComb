@@ -24,3 +24,57 @@ C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\Ro
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.dll
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.pdb
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.WSAccess\bin\Release\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.config
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.dll.config
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\HelloSign.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.DataAccess.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.DataAccess.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.App.config
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.CopyComplete
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.config
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.dll.config
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.WSAccess.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\HelloSign.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.DataAccess.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.Commons.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\RoundComb.DataAccess.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\bin\Release\NLog.xml
+C:\Users\PC\Documents\RoundComb\bin\NLog.config
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.WSAccess.dll.config
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.WSAccess.dll
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.WSAccess.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.App.config
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.csproj.CopyComplete
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.WSAccess\obj\Release\RoundComb.WSAccess.pdb

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Namespaces>
+  <Namespace Name="RoundComb.Crypt">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Considere combinar los tipos definidos en 'RoundComb.Crypt' con otro espacio de nombres.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\PC\Downloads\RoundComb.Server (1)\Bin\Debug\RoundComb.Commons.Crypt.dll">
+   <Modules>
+    <Module Name="roundcomb.commons.crypt.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'RoundComb.Commons.Crypt.dll' con una clave de nombre seguro.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Marque 'RoundComb.Commons.Crypt.dll' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="RoundComb.Crypt">
+       <Types>
+        <Type Name="Encription" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DecryptString(System.String,System.String,System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="string" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="111">En el miembro 'Encription.DecryptString(string, string, string, int)', considere reemplazar el identificador del tipo de datos 'String' en el nombre del parámetro 'encryptedString' por un término más genérico, como 'value'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fileDecript(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="file" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="169">Corrija el uso de mayúsculas y minúsculas en 'file' en el nombre del miembro 'Encription.fileDecript(string)' cambiándolo a 'File'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fileEncrip(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="file" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="164">Corrija el uso de mayúsculas y minúsculas en 'file' en el nombre del miembro 'Encription.fileEncrip(string)' cambiándolo a 'File'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCustomConfigKey(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="209">Modifique 'Encription.GetCustomConfigKey(string, string)' para capturar una excepción más específica que 'object' o vuelva a producir la excepción.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDecryptedSetting(System.String,System.Int32,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Desechar (Dispose) objetos antes de perder el ámbito" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="154">En el método 'Encription.GetDecryptedSetting(string, int, string, string)', no se desecha (Dispose) el objeto 'memoryStream' en todas las rutas de acceso de excepciones. Llame a System.IDisposable.Dispose en el objeto 'memoryStream' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="149">En el método 'Encription.GetDecryptedSetting(string, int, string, string)', llame a System.IDisposable.Dispose en el objeto 'password' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="151">En el método 'Encription.GetDecryptedSetting(string, int, string, string)', llame a System.IDisposable.Dispose en el objeto 'symmetricKey' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+            </Message>
+            <Message TypeName="No usar Dispose varias veces en objetos" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="159">El objeto 'memoryStream' admite Dispose más de una vez en el método 'Encription.GetDecryptedSetting(string, int, string, string)'. Para evitar generar una excepción System.ObjectDisposedException, no debe llamar a Dispose más de una vez en un objeto.: Lines: 159</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetEncryptString(System.String,System.Int32,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Desechar (Dispose) objetos antes de perder el ámbito" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="100">En el método 'Encription.GetEncryptString(string, int, string, string)', no se desecha (Dispose) el objeto 'memoryStream' en todas las rutas de acceso de excepciones. Llame a System.IDisposable.Dispose en el objeto 'memoryStream' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="95">En el método 'Encription.GetEncryptString(string, int, string, string)', llame a System.IDisposable.Dispose en el objeto 'password' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="97">En el método 'Encription.GetEncryptString(string, int, string, string)', llame a System.IDisposable.Dispose en el objeto 'symmetricKey' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+            </Message>
+            <Message TypeName="No usar Dispose varias veces en objetos" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="106">El objeto 'memoryStream' admite Dispose más de una vez en el método 'Encription.GetEncryptString(string, int, string, string)'. Para evitar generar una excepción System.ObjectDisposedException, no debe llamar a Dispose más de una vez en un objeto.: Lines: 106</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadCertificate(System.Security.Cryptography.X509Certificates.StoreLocation,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Desechar (Dispose) objetos antes de perder el ámbito" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="49">En el método 'Encription.LoadCertificate(StoreLocation, string)', no se desecha (Dispose) el objeto 'store' en todas las rutas de acceso de excepciones. Llame a System.IDisposable.Dispose en el objeto 'store' antes de que todas las referencias a él estén fuera de ámbito.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WrapperDecryptString(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="121">En el método 'Encription.WrapperDecryptString(string, string)' visible externamente, valide el parámetro 'pKey' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WrapperEncryptString(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="86">En el método 'Encription.WrapperEncryptString(string, string)' visible externamente, valide el parámetro 'pKey' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#X509DecryptString(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="string" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="38">En el miembro 'Encription.X509DecryptString(string, string)', considere reemplazar el identificador del tipo de datos 'string' en el nombre del parámetro 'stringToDecript' por un término más genérico, como 'value'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#X509Encrypt(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="29">'Encription.X509Encrypt(X509Certificate2, string)' crea una excepción de tipo 'Exception', un tipo de excepción que no es suficientemente específica y que nunca debería producir el código de usuario. Si se produce esta instancia de excepción, use un tipo de excepción diferente.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#X509EncryptString(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="string" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="LanguageIndependentMemberParameter" Certainty="75" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt" File="Encription.cs" Line="17">En el miembro 'Encription.X509EncryptString(string, string)', considere reemplazar el identificador del tipo de datos 'string' en el nombre del parámetro 'stringToEncrypt' por un término más genérico, como 'value'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Impersonation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,System.String,RoundComb.Crypt.LogonType)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Runtime.InteropServices.SafeHandle.DangerousGetHandle" TypeName="AvoidCallingProblematicMethods" Category="Microsoft.Reliability" CheckId="CA2001" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+             <Issue Name="System.Runtime.InteropServices.SafeHandle.DangerousGetHandle" Certainty="75" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="30">Quite la llamada a SafeHandle.DangerousGetHandle de 'Impersonation.Impersonation(string, string, string, LogonType)'.</Issue>
+            </Message>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="26">'Impersonation.Impersonation(string, string, string, LogonType)' crea una excepción de tipo 'ApplicationException', un tipo de excepción que no es suficientemente específica y que nunca debería producir el código de usuario. Si se produce esta instancia de excepción, use un tipo de excepción diferente.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="26">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Impersonation.Impersonation(string, string, string, LogonType)' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LogonUser(System.String,System.String,System.String,RoundComb.Crypt.LogonType)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Logon" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="15">El término discreto 'Logon' del nombre del miembro 'Impersonation.LogonUser(string, string, string, LogonType)' se debería expresar como una palabra compuesta, 'LogOn'.</Issue>
+            </Message>
+            <Message Id="logon" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="15">En el miembro 'Impersonation.LogonUser(string, string, string, LogonType)', el término discreto 'logon' del nombre del parámetro 'logonType' se debería expresar como una palabra compuesta, 'logOn'.</Issue>
+            </Message>
+            <Message Id="username" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterShouldBeCompoundWord" Certainty="80" Level="Error" Path="C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\Impersonation" File="Impersonation.cs" Line="15">En el miembro 'Impersonation.LogonUser(string, string, string, LogonType)', el término discreto 'username' del nombre del parámetro 'username' se debería expresar como una palabra compuesta, 'userName'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LogonType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Logon" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeCompoundWord" Certainty="80" Level="Error">El término discreto 'Logon' del nombre del tipo 'LogonType' se debería expresar como una palabra compuesta, 'LogOn'.</Issue>
+          </Message>
+          <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+           <Issue Name="NotFlagsNoZeroValue" Certainty="95" Level="CriticalError">Agregue un miembro a 'LogonType' que tenga valor cero con el nombre sugerido 'None'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'NativeMethods' es una clase interna de la que aparentemente nunca se crea una instancia. Si es así, quite el código del ensamblado. Si esta clase está destinada a contener sólo métodos estáticos, considere la posibilidad de agregar un constructor privado para evitar que el compilador genere un constructor de forma predeterminada.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#LogonUser(System.String,System.String,System.String,System.Int32,System.Int32,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2022-09-10 09:08:22Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Agregue MarshalAsAttribute al tipo de valor devuelto de P/Invoke 'NativeMethods.LogonUser(string, string, string, int, int, out IntPtr)'. Si el tipo de valor devuelto no administrado correspondiente es 'BOOL' de Win32 de 4 bytes, use MarshalAs(UnmanagedType.Bool). Para 'bool' de C++ de 1 byte, use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Los ensamblados deben tener nombres seguros válidos</Name>
+   <Description>Puede que el ensamblado no tenga un nombre seguro, que no sea válido o que éste sea válido únicamente por la configuración del equipo. No se puede implementar el ensamblado en este estado. Las causas más probables son: 1) El contenido del ensamblado se modificó después de firmarlo. 2) Error en el proceso de firma. 3) El ensamblado se firmó con retraso. 4) Existía una clave del Registro que permitió que se realizara la comprobación (de lo contrario no se hubiera realizado).</Description>
+   <Resolution Name="NoStrongName">Firme {0} con una clave de nombre seguro.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidCallingProblematicMethods" Category="Microsoft.Reliability" CheckId="CA2001">
+   <Name>Evitar llamar a métodos problemáticos</Name>
+   <Description>Evite realizar llamadas a métodos potencialmente peligrosas e innecesarias.</Description>
+   <Resolution Name="System.Runtime.InteropServices.SafeHandle.DangerousGetHandle">Quite la llamada a SafeHandle.DangerousGetHandle de {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385973.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="reliabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Evitar espacios de nombres con pocos tipos</Name>
+   <Description>Un espacio de nombres debe tener generalmente más de cinco tipos.</Description>
+   <Resolution Name="Default">Considere combinar los tipos definidos en '{0}' con otro espacio de nombres.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Evitar las clases internas sin instancia</Name>
+   <Description>Se detectó una clase interna de la que aparentemente nunca se crea una instancia. Esta regla no intenta detectar la creación enlazada en tiempo de ejecución y generará falsos positivos si las instancias de un tipo se crean sólo de esta forma (por ejemplo, mediante Activator.CreateInstance o pasando el tipo como argumento a un constructor TypeConverter).</Description>
+   <Resolution Name="Default">{0} es una clase interna de la que aparentemente nunca se crea una instancia. Si es así, quite el código del ensamblado. Si esta clase está destinada a contener sólo métodos estáticos, considere la posibilidad de agregar un constructor privado para evitar que el compilador genere un constructor de forma predeterminada.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente</Name>
+   <Description>Evitar la creación de palabras compuestas de términos que existen en el diccionario como términos discretos. No crear una palabra compuesta como por ejemplo 'StopWatch' ni 'PopUp'. El diccionario reconoce estos términos y se deben emplear mayúsculas y minúsculas: 'Stopwatch' y 'Popup'.</Description>
+   <Resolution Name="MemberParameterShouldBeCompoundWord">En el miembro {0}, el término discreto '{1}' del nombre del parámetro {2} se debería expresar como una palabra compuesta, '{3}'.</Resolution>
+   <Resolution Name="MemberShouldBeCompoundWord">El término discreto '{0}' del nombre del miembro {1} se debería expresar como una palabra compuesta, '{2}'.</Resolution>
+   <Resolution Name="TypeShouldBeCompoundWord">El término discreto '{0}' del nombre del tipo {1} se debería expresar como una palabra compuesta, '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="Desechar (Dispose) objetos antes de perder el ámbito" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Desechar (Dispose) objetos antes de perder el ámbito</Name>
+   <Description>Si un objeto que se puede desechar (método Dispose) no se desecha de forma explícita antes de que todas las referencias a él estén fuera de ámbito, el objeto se desechará en algún momento indeterminado cuando el recolector de elementos no utilizados ejecute el finalizador del objeto. Puesto que podría producirse un evento excepcional que impida que se ejecute el finalizador del objeto, el objeto debe desecharse de forma explícita.</Description>
+   <Resolution Name="ExceptionEdge">En el método {0}, no se desecha (Dispose) el objeto {1} en todas las rutas de acceso de excepciones. Llame a System.IDisposable.Dispose en el objeto {1} antes de que todas las referencias a él estén fuera de ámbito.</Resolution>
+   <Resolution Name="NonExceptionEdge">En el método {0}, llame a System.IDisposable.Dispose en el objeto {1} antes de que todas las referencias a él estén fuera de ámbito.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>No capturar los tipos de excepción general</Name>
+   <Description>No debe capturar las excepciones o SystemException. Si captura los tipos de excepción general se pueden ocultar problemas en tiempo de ejecución del usuario de la biblioteca y dificultar la depuración. Únicamente debería capturar aquellas excepciones que pueda administrar correctamente.</Description>
+   <Resolution Name="Default">Modifique {0} para capturar una excepción más específica que {1} o vuelva a producir la excepción.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+   <Name>No provocar tipos de excepción reservados</Name>
+   <Description>El código de usuario no debe crear y producir excepciones de ciertos tipos que están reservadas por el runtime o que sean de un tipo de excepción demasiado general. Entre los tipos de excepción que son demasiado generales se incluyen Exception, SystemException y ApplicationException. Entre los tipos de excepción que están reservados por el runtime se incluyen ThreadAbortException, OutOfMemoryException, ExecutionEngineException y IndexOutOfRangeException.</Description>
+   <Resolution Name="TooGeneric">{0} crea una excepción de tipo {1}, un tipo de excepción que no es suficientemente específica y que nunca debería producir el código de usuario. Si se produce esta instancia de excepción, use un tipo de excepción diferente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182338.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+   <Name>Las enumeraciones deben tener un valor igual a cero</Name>
+   <Description>Una enumeración debe tener un valor igual a cero. Si la enumeración no tiene el atributo Flags, debería tener un miembro con un valor de cero que represente el estado vacío. Opcionalmente, este valor se denomina 'None'. Para una enumeración con el atributo Flags, un miembro de valor cero es opcional, y si existe, siempre debería denominarse 'None'. Este valor debería indicar que no se han establecido valores en la enumeración. Utilizar un miembro con valor cero para otros propósitos es contrario a la utilización del atributo Flags en el que los operadores AND y OR bit a bit no son válidos con el miembro.</Description>
+   <Resolution Name="NotFlagsNoZeroValue">Agregue un miembro a {0} que tenga valor cero con el nombre sugerido 'None'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182149.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente</Name>
+   <Description>Los identificadores de tipo, espacio de nombres y miembro usan las mayúsculas y minúsculas como en Pascal. Los identificadores de parámetro usan las mayúsculas y minúsculas como en Camel. Los acrónimos de dos letras en estos identificadores deben ir en mayúsculas; por ejemplo, use System.IO en lugar de System.Io. Los acrónimos de tres o más letras deben usar las mayúsculas y minúsculas como en Pascal; por ejemplo, use System.Xml en lugar de System.XML. La convención de mayúsculas y minúsculas Pascal pone en mayúscula la primera letra de cada palabra, como en BackColor. La convención de mayúsculas y minúsculas Camel pone en minúscula la primera letra de la primera palabra y, en mayúscula, la primera letra de las palabras siguientes, como en backgroundColor. Si bien puede ser una práctica común para algunos acrónimos de dos letras no ponerlos totalmente en mayúsculas, no se deben excluir las infracciones de esta regla por esta razón. Por ejemplo, 'DbConnection', es común pero incorrecto; use DBConnection. Una infracción de esta regla puede ser necesaria por compatibilidad con esquemas de símbolos no administrados existentes. En general, sin embargo, estos símbolos no deberían estar visibles fuera del ensamblado que los usa.</Description>
+   <Resolution Name="Member">Corrija el uso de mayúsculas y minúsculas en '{0}' en el nombre del miembro {1} cambiándolo a '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720">
+   <Name>Los identificadores no deben contener nombres de tipo</Name>
+   <Description>Evite el uso de nombres de tipo específicos del lenguaje en parámetros y miembros, así como identificadores de tipo de datos en parámetros. Los nombres de tipo pueden no ser intuitivos para todos los desarrolladores. Se recomienda seleccionar un nombre genérico, como 'value', en su lugar. Si esto no es suficiente, procure usar el nombre de tipo que se define en la biblioteca de .NET Framework y evite totalmente los nombres de tipo específicos del lenguaje. Algunos ejemplos de nombres de tipo específicos de C# son 'float' (use 'Single' si un nombre genérico no es suficiente) y 'ulong' (use 'UInt64' si un nombre genérico no es suficiente).</Description>
+   <Resolution Name="LanguageIndependentMemberParameter">En el miembro {0}, considere reemplazar el identificador del tipo de datos '{1}' en el nombre del parámetro {2} por un término más genérico, como 'value'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb531486.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Marque los ensamblados con CLSCompliantAttribute</Name>
+   <Description>Los ensamblados deben establecer explícitamente ser conformes a CLS usando el atributo CLSCompliant. Un ensamblado sin este atributo no es conforme a CLS. Los ensamblados, módulos y tipos pueden ser conformes a CLS incluso si alguna parte del ensamblado, módulo o tipo no son conformes a CLS. Se aplican las siguientes reglas: 1) Si el elemento está marcado como CLSCompliant, cualquier miembro no compatible debe tener el atributo CLSCompliant presente con el argumento establecido como false. 2) Se debe proporcionar un miembro alternativo conforme a CLS comparable con cada miembro que no sea conforme a CLS.</Description>
+   <Resolution Name="Default">Marque {0} con CLSCompliant(true) porque expone tipos visibles externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+   <Name>Marque los argumentos P/Invoke booleanos con MarshalAs</Name>
+   <Description>Todos los parámetros P/Invoke booleanos y tipos de valor devuelto deben estar marcados explícitamente con el atributo MarshalAs. De forma predeterminada, el sistema serializará todos los argumentos booleanos como UnmanagedType.Bool de 4 bytes. Este es el comportamiento correcto para argumentos 'BOOL' de Win32 pero incorrecto para los argumentos 'bool' de C++ , que deben serializarse como UnmanagedType.U1 de 1 byte. Por razones de mantenimiento de código, especifique explícitamente la información de serialización para argumentos booleanos y valores devueltos.</Description>
+   <Resolution Name="Return">Agregue MarshalAsAttribute al tipo de valor devuelto de P/Invoke {0}. Si el tipo de valor devuelto no administrado correspondiente es 'BOOL' de Win32 de 4 bytes, use MarshalAs(UnmanagedType.Bool). Para 'bool' de C++ de 1 byte, use MarshalAs(UnmanagedType.U1).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182206.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="No usar Dispose varias veces en objetos" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>No usar Dispose varias veces en objetos</Name>
+   <Description>Un método Dispose correctamente implementado se puede llamar varias veces sin producir ninguna excepción. Sin embargo, esto no está garantizado y, para evitar generar una excepción System.ObjectDisposedException, no debe llamar al método Dispose más de una vez en un objeto.</Description>
+   <Resolution Name="Default">El objeto {0} admite Dispose más de una vez en el método {1}. Para evitar generar una excepción System.ObjectDisposedException, no debe llamar a Dispose más de una vez en un objeto.: Lines: 159</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Especificar IFormatProvider</Name>
+   <Description>Si existe una sobrecarga que toma un argumento IFormatProvider, se debe llamar siempre en favor de una sobrecarga que no lo haga. Algunos métodos del runtime convierten un valor a o desde una representación de cadena y toman un parámetro de cadena que contiene uno o varios caracteres, denominados especificadores de formato, que indican cómo se debe convertir el valor. Si el significado del especificador de formato varía por referencia cultural, un objeto de formato proporciona los caracteres usados en la representación de cadena. En escenarios donde el comportamiento de ordenación y comparación no debería cambiar nunca entre referecias culturales, especifique CultureInfo.InvariantCulture; de lo contrario, especifique CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} se mostrará al usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validar argumentos de métodos públicos</Name>
+   <Description>Todos los argumentos de referencia pasados a métodos visibles externamente deben comprobarse para ver si son NULL (Nothing en VB). Si procede, produzca una excepción System.ArgumentNullException cuando el argumento sea NULL.</Description>
+   <Resolution Name="Default">En el método {0} visible externamente, valide el parámetro '{1}' antes de usarlo.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de Code Analysis</String>
+ </Localized>
+</FxCopReport>

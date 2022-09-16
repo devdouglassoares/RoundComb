@@ -48,3 +48,52 @@ C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\Ro
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.CopyComplete
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.dll
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.config
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.WebHost.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.WebHost.xml
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.CopyComplete
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.config
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\Newtonsoft.Json.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.WebHost.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\Newtonsoft.Json.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\NLog.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.xml
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\bin\Release\System.Web.Http.WebHost.xml
+C:\Users\PC\Documents\RoundComb\bin\NLog.config
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.dll
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.csproj.CopyComplete
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons\obj\Release\RoundComb.Commons.pdb

@@ -123,3 +123,7 @@ C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\Ro
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.csproj.CopyComplete
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.dll
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServiceLayer.RESTApi\obj\Debug\RoundComb.ServiceLayer.RESTApi.pdb

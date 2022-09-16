@@ -9,3 +9,15 @@ C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\Ro
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.dll
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.pdb
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csprojAssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\Bin\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\Bin\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.Crypt.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.Crypt\obj\Release\RoundComb.Commons.Crypt.pdb

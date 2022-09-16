@@ -4,11 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using RoundComb.Commons.Models;
 using RoundComb.ServicesProvider;
 
 namespace RoundComb.ServiceLayer.RESTApi.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PropertyController : ApiController
     {
         private readonly ServiceProvider _serviceprovider;
@@ -17,8 +19,6 @@ namespace RoundComb.ServiceLayer.RESTApi.Controllers
             _serviceprovider = new ServiceProvider();
 
         }
-        // Allow CORS for all origins. (Caution!)
-        [EnableCors(origins: "*", headers: "*", methods: "*")]
 
 
         [HttpGet]

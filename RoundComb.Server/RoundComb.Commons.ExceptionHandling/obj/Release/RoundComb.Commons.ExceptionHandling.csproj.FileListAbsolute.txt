@@ -12,3 +12,17 @@ C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\Ro
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CopyComplete
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.dll
 C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\Bin\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\Bin\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CopyComplete
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Documents\RoundComb\bin\RoundComb.Commons.ExceptionHandling.pdb
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.csproj.CopyComplete
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.dll
+C:\Users\PC\Documents\RoundComb\RoundComb.Server\RoundComb.Commons.ExceptionHandling\obj\Release\RoundComb.Commons.ExceptionHandling.pdb

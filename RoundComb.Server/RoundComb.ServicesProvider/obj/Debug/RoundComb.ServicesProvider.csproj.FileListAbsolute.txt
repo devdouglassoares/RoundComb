@@ -1,23 +1,25 @@
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csprojAssemblyReference.cache
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csproj.CoreCompileInputs.cache
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/bin/Debug/NLog.config
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.pdb
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll.CodeAnalysisLog.xml
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll.lastcodeanalysissucceeded
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csproj.CopyComplete
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.dll
-C:/Users/Luis/OneDrive/Part-Time/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.pdb
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/NLog.config
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll.config
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.pdb
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll.CodeAnalysisLog.xml
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/bin/Debug/RoundComb.ServicesProvider.dll.lastcodeanalysissucceeded
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csprojAssemblyReference.cache
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csproj.CoreCompileInputs.cache
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.csproj.CopyComplete
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.dll
-C:/Users/Luis/OneDrive/Part-Time/Freelancer/roundcomb/server/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.pdb
-/home/douglas/Downloads/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.dll
-/home/douglas/Downloads/RoundComb.Server/RoundComb.ServicesProvider/obj/Debug/RoundComb.ServicesProvider.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\NLog.config
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.pdb
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll.CodeAnalysisLog.xml
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll.lastcodeanalysissucceeded
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.dll
+C:\Users\Luis\OneDrive\Part-Time\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\NLog.config
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll.config
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.pdb
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll.CodeAnalysisLog.xml
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\bin\Debug\RoundComb.ServicesProvider.dll.lastcodeanalysissucceeded
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csprojAssemblyReference.cache
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.CoreCompileInputs.cache
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.CopyComplete
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.dll
+C:\Users\Luis\OneDrive\Part-Time\Freelancer\roundcomb\server\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.pdb
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.dll
+C:\Users\PC\Downloads\RoundComb.Server (1)\RoundComb.Server\RoundComb.ServicesProvider\obj\Debug\RoundComb.ServicesProvider.pdb
