@@ -42,7 +42,7 @@ public class Example
 
         var data = new SignatureRequestCreateEmbeddedRequest(
             clientId: "5bad73f4b04d61a61b823d07f4a2a0e1",
-            title: "NDA with Acme Co.",
+            title: "Flamengo Campeao.",
             subject: "The NDA we talked about",
             message: "Please sign this NDA and then we can discuss more. Let me know if you have any questions.",
             signers: new List<SubSignatureRequestSigner>(){signer1, signer2},
@@ -57,9 +57,24 @@ public class Example
         try
         {
             var result = apiInstance.SignatureRequestCreateEmbedded(data);
+            //var result = apiInstance.SignatureRequestSend(data);
             Console.WriteLine(result);
-            var URL = _apiInstance.EmbeddedSignUrl(result.signatureId);
-            Console.WriteLine(URL);
+            var signerId1 = result.SignatureRequest.Signatures[0].SignatureId;
+            var signerId2 = result.SignatureRequest.Signatures[1].SignatureId;
+            Console.WriteLine(signerId1);
+            Console.WriteLine(signerId2);
+              if(!string.IsNullOrWhiteSpace(signerId1))
+            {
+            var URL = _apiInstance.EmbeddedSignUrl(signerId1);
+            Console.WriteLine(URL);            
+            }
+           /*  if(!string.IsNullOrWhiteSpace(signerId2))
+            {
+            var URL2 = _apiInstance.EmbeddedSignUrl(signerId2);
+            Console.WriteLine(URL2);
+            } */
+            /*var _result = apiInstance.SignatureRequestList(accountId);
+            Console.WriteLine(_result.SignatureRequestResponse[SignatureRequests]);*/
         }
         catch (ApiException e)
         {
