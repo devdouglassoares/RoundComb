@@ -17,6 +17,8 @@ namespace RoundComb.ServiceLayer.RESTApi.Controllers
             _serviceprovider = new ServiceProvider();
 
         }
+        // Allow CORS for all origins. (Caution!)
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
 
 
         [HttpGet]

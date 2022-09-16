@@ -21,7 +21,8 @@ namespace RoundComb.ServiceLayer.RESTApi.Controllers
             _serviceprovider = new ServiceProvider();
 
         }
-
+        // Allow CORS for all origins. (Caution!)
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [HttpPost, HttpHead]
         [Route("~/api/event/createchatroom")]
         public HttpResponseMessage Createchatroom(ChatRoomModel chatroom)
